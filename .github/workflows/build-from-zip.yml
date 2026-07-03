@@ -7,7 +7,7 @@ on:
       - main
       - master
     paths:
-      - 'PrivacySpaceMVP_PhoneBuild.zip'
+      - 'PrivacySpaceMVP_PhoneBuild_v2.zip'
       - '.github/workflows/build-from-zip.yml'
 
 jobs:
@@ -41,7 +41,7 @@ jobs:
       - name: Unzip project
         run: |
           rm -rf PrivacySpaceMVP
-          unzip -q PrivacySpaceMVP_PhoneBuild.zip
+          unzip -q PrivacySpaceMVP_PhoneBuild_v2.zip
           ls -la
           ls -la PrivacySpaceMVP
 
